@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Task 1</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+      var name = "Adewole Timilehin";
+      var courses = ["Python","C#","Node.js","Javascript"];
+      var text = "";
+      var i = 0;
+      
+      
+      document.getElementById("p1").innerHTML = "Name: " + name;
+      
+      for (i=0; i<courses.length; i++){
+        text += courses[i] + " ";
+      }
+      document.getElementById("p2").innerHTML = "Courses: " + text;
+      
+      
+      text = "";
+      if (courses.length % 2 == 0){
+        for (i=2; i<=200; i+=2)
+          text += i + " ";
+      }
+      else{
+        for (i=1; i<200; i+=2)
+          text += i + " ";
+      }
+      document.getElementById("p3").innerHTML = text;
+    </script>
+  </body>
+</html>
