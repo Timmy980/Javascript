@@ -23,7 +23,7 @@ http.createServer(function(req, res) {
 		req.on('end', function() {
 			fs.writeFile('new.txt', body, function(err){
 				if (err) throw err;
-				console.log('Mesage Saved!');
+				console.log('Message Saved!');
 			});
 			res.writeHead(200);
 			res.end(postHTML);
